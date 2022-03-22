@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-  height: 100vh;
+  /* height: 100vh; */
   font-family: Roboto, sans-serif;
 }
 
@@ -22,15 +22,16 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #f9faf8;
-  margin: 16px auto 16px 16px;
+  margin: 16px auto 16px 48px;
 }
 
 .header-links {
-  margin: 16px 16px 16px auto;
+  margin: 16px 48px 16px auto;
 }
 
 .summary {
   display: flex;
+  align-items: center;
   background-color: #1f2037;
 }
 
@@ -39,7 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 40vw;
-  margin: 16px auto 16px 16px;
+  margin: 48px auto 48px 48px;
 }
 
 .summary-message-and-signup div {
@@ -53,10 +54,88 @@ body {
   color: #e5e7eb;
 }
 
+.summary button {
+  margin: 16px 0 16px 0;
+}
+
+button {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3882f6;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
 .summary-image img {
-  height: 200px;
-  width: 300px;
-  margin: 16px 16px 16px auto;
+  height: 250px;
+  width: 375px;
+  border: solid 1px #3882f6;
+  border-radius: 10px;
+  margin: 48px 48px 48px auto;
+}
+
+.random-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.random-info-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 48px 0 48px 0;
+}
+
+.block-container {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+  /* gap: 48px; */
+  margin: 0 10vw 0 10vw;
+}
+
+.random-info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  height: 250px;
+  width: 150px;
+}
+
+.random-info-block img {
+  height: 150px;
+  width: 150px;
+  border: solid 1px #3882f6;
+  border-radius: 10px;
+}
+
+.random-info-block p {
+  text-align: center;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  margin: 48px 0 48px 0;
+}
+
+.quote div {
+  padding: 96px;
+}
+
+.quote-message {
+  font-size: 36px;
+  font-weight: 100;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.quote-signature {
+
 }
 
 .footer {
