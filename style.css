@@ -1,3 +1,8 @@
+:root {
+  --margin-horizontal: 48px;
+  --margin-vertical: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,11 +16,14 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.header-background {
+  background-color: #1f2037;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f2037;
 }
 
 .logo  {
@@ -23,34 +31,45 @@ body {
   font-weight: bold;
   color: #f9faf8;
   margin: 16px auto 16px 48px;
+  /* margin: var(--margin-vertical), auto, */
+  /*         var(--margin-vertical), var(--margin-horizontal); */
 }
 
 .header-links {
   margin: 16px 48px 16px auto;
+  /* margin: var(--margin-vertical), var(--margin-horizontal), */
+  /*         var(--margin-vertical), auto; */
+}
+
+.summary-background {
+  background-color: #1f2037;
 }
 
 .summary {
   display: flex;
+  justify-content: space-between;
+  gap: 15vw;
   align-items: center;
-  background-color: #1f2037;
 }
 
 .summary-message-and-signup {
   flex: 0 1 auto;
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: 35vw;
   margin: 48px auto 48px 48px;
 }
 
 .summary-message-and-signup div {
   font-size: 48px;
   font-weight: 600;
+  width: 30vw;
   color: #f9faf8;
 }
 
 .summary-message-and-signup p {
   font-size: 18px;
+  width: 30vw;
   color: #e5e7eb;
 }
 
@@ -92,9 +111,9 @@ button {
 
 .block-container {
   display: flex;
-  align-self: stretch;
-  justify-content: space-between;
-  /* gap: 48px; */
+  align-self: center;
+  /* justify-content: space-between; */
+  gap: 48px;
   margin: 0 10vw 0 10vw;
 }
 
@@ -120,10 +139,12 @@ button {
 
 .quote {
   background-color: #e5e7eb;
-  margin: 48px 0 48px 0;
+  margin: 48px 0 0 0;
 }
 
 .quote div {
+  display: flex;
+  flex-direction: column;
   padding: 96px;
 }
 
@@ -135,11 +156,41 @@ button {
 }
 
 .quote-signature {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 0 auto;
+}
 
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20vw;
+  height: 120px;
+  background-color: #3882f6;
+  border: none;
+  border-radius: 10px;
+  margin: 48px 48px;
+}
+
+.signup-text {
+  color: #f9faf8;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup button {
+  border: solid 2px #f9faf8;
 }
 
 .footer {
-  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #f9faf8;
+  height: 64px;
+  background-color: #1f2037;
 }
 
 li {
